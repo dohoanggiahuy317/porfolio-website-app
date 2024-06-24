@@ -1,82 +1,71 @@
-import stonks from "../assets/images/stonks.png";
-import sendfrom from "../assets/images/sendform.jpg";
-import semicolon from "../assets/images/semicolon.png";
-import scroll from "../assets/images/scroll.jpg";
-import getv from "../assets/images/get-v.jpg";
+import latex from "../assets/images/project/latex.webp";
+import sql from "../assets/images/project/sql.jpeg";
+import cornell from "../assets/images/project/cornell.jpeg";
+import sentiment from "../assets/images/project/sentiment.jpeg";
+import hand from "../assets/images/project/hand.jpeg";
+import key from "../assets/images/project/key.jpeg";
+import chatbot from "../assets/images/project/chatbot.jpeg";
+import pacman from "../assets/images/project/pacman.jpeg";
+import art from "../assets/images/project/art.jpeg";
+
+
 
 export const projects = [
   {
-    title: "Get Vulnerable",
-    image: getv,
-    link: "https://get-vulnerable.teshank.dev",
+    title: "TikTok TechJam Hackathon 2024 - Image 2 LaTex converter",
+    image: latex,
+    github: "https://github.com/dohoanggiahuy317/image2latex-App",
     description:
-      "Game which encourages the players to open up by asking questions",
+      "Built a full-stack app to convert images to LaTeX on AWS S3 to reduce learning stress for 500 students in my department.",
   },
   {
-    title: "Semicolon",
-    image: semicolon,
-    link: "https://github.com/teshank2137/semicolon.md",
+    title: "Student Teamwork Management SQL System",
+    image: sql,
+    github: "https://github.com/dohoanggiahuy317/SQL_Management_System_Proj",
+    description:"Created a light SQL engine with distributed Parallel Buffer Pool for managing 3,000 teamwork assignments at my college.",
+  },
+  {
+    title: "Cornell University Hackathon 2020",
+    image: cornell,
+    github: "https://github.com/dohoanggiahuy317/Self_driving-Car-Obstacle-n-Sign-Detect-Proj",
     description:
-      "Mental health support by predicting and offering activities for mood upliftment.",
+      "Built an autonomous software system utilizing OpenCV and created 3D printed prototype of self-driving car using AutoCAD.",
   },
   {
-    title: "Send form to me",
-    image: sendfrom,
-    link: "https://sendformto.me",
-    description:
-      "Backend-as-a-service for creating forms with unique URLs and email notifications.",
+    title: "Sentiment Analysis with LSTM and Attention ",
+    image: sentiment,
+    github: "https://github.com/dohoanggiahuy317/Sentiment-Analysis-LSTM-vs-Attention-App",
+    description:"Developed 2 Bi-LSTM and Attention NLP models to analyze users’ feedback on online shopping site, achieving 89% accuracy.",
   },
   {
-    title: "Fan Merch",
-    image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/fanmerch.png",
-    github: "https://github.com/teshank2137/fanMerch",
-    link: "https://fan-merch.vercel.app/",
-    description:
-      "A conceptual website for social media influence's to sell their merch.",
+    title: "Hand gesture Computer Control app",
+    description: "Designed a motion detection system using OpenCV that issues commands to a computer via Autopy, enabling handicapped individuals to operate a computer.",
+    image: hand,
+    github: "https://github.com/dohoanggiahuy317/Hand-Gesture-Computer-Control-App",
   },
   {
-    title: "Find Techie",
-    description:
-      "A Twitter bot that scans Twitter for job/intern posting and retweets top tweets daily.",
-    image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/Techie.png",
-    link: "https://twitter.com/FindTechie",
+    title: "Distributed Key-Value storage",
+    description: "Developed a distributed key-value storage system in Rust with the CURB consensus protocol. Utilized RocksDB batch processing to reduce execution time by 30% for transactions and basic key-value operations.",
+    image: key,
+    github: "https://github.com/dohoanggiahuy317/Distributed-Key-Value-storage-Proj",
   },
   {
-    title: "React Infinite scroll",
-    description: "Infinite scrolling using custom hook and ObservableAPI",
-    image: scroll,
-    link: "https://react-infinite-scroll-nu.vercel.app/",
-    github: "https://github.com/teshank2137/react-infinite-scroll",
+    title: "Machine Learing Chatbot App",
+    description: "Developed 4 bots using chatBot and NLTK framework and trained on the Cornell Movie-Dialogs Corpus database.",
+    image: chatbot,
+    github: "https://github.com/dohoanggiahuy317/Premoji-ML_Chatbot-App",
   },
   {
-    title: "Smart Attendance App",
-    description:
-      "A mobile app in which the user can track and mark attendance using face verification.",
-    image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/smartattendance.png",
-    github: "https://github.com/teshank2137/smartAtendence",
+    title: "Pacman game App",
+    description: "Recreated Pac-man game as a Full stack Java app. Designed 20+ different maps and levels for playes",
+    image: pacman,
+    github: "https://github.com/dohoanggiahuy317/Pakman-game-App",
   },
   {
-    title: "Stock Market Prediction API",
-    description:
-      "An API Which predicts the next day's closing price of a stock.",
-    image: stonks,
-    github: "https://github.com/teshank2137/stockprediction",
-  },
-  {
-    title: "Algorithm Visualizer",
-    description: "Web App to visualize the searching and sorting algorithms",
-    image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/sort.JPG",
-    link: "https://teshank2137.github.io/#/",
-  },
-  {
-    title: "Portfolio v1",
+    title: "Hanoi Digital Art Gallery",
     description: "Built using ReactJS, ThreeJS, CSS3 and lots of ❤️ love.",
-    image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/port.JPG",
-    link: "https://www.v1.teshank.dev/",
-  },
+    image: art,
+    github: "https://github.com/dohoanggiahuy317/JaWeee-Art-portfolio-Web",
+    link: "https://jaweee-art-gallery.netlify.app/",
+  }
 ];

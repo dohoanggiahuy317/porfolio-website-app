@@ -15,8 +15,8 @@ export const Cube = styled.div`
   position: relative;
   transform-style: preserve-3d;
   transform: rotateX(35deg) rotateY(45deg);
-  width: 320px;
-  height: 340px;
+  width: 500px;
+  height: 540px;
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
@@ -25,8 +25,8 @@ export const Cube = styled.div`
   }
   transition: all 0.2s cubic-bezier(0.4, 0.55, 0.2, 1.03);
   @media screen and (max-width: 720px) {
-    width: 270px;
-    height: 340px;
+    width: 400px;
+    height: 440px;
   }
 
   &.fadeIn {
@@ -35,10 +35,14 @@ export const Cube = styled.div`
   }
 `;
 
+
+
+
+
 export const Face = styled.div`
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   transform-style: preserve-3d;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -72,16 +76,18 @@ export const Face = styled.div`
     box-shadow: 0.6rem 0.2rem 0 ${blue["00"]};
 
     .img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      transition: all 0.2s ease;
-      background-image: url(${(props) => props.image});
-      background-size: auto 200px;
-      background-position: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transition: all 0.2s ease;
+        background-image: url(${(props) => props.image});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
 
     .content {
@@ -111,11 +117,11 @@ export const Face = styled.div`
   }
 
   @media screen and (max-width: 720px) {
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
     &.face-1 {
       .img {
-        background-size: auto 160px;
+        background-size: auto 100%;
       }
       .content {
         .text-h {

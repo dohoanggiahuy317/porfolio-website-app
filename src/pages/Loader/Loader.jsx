@@ -1,17 +1,3 @@
-// import React from 'react';
-// import './loader.css'; // We'll create this file next
-
-// const Loader = () => {
-//   return (
-//     <div className="spinner-container">
-//       <div className="spinner"></div>
-//     </div>
-//   );
-// };
-
-// export default Loader;
-
-
 import React from 'react';
 import './loader.css';
 
@@ -29,5 +15,3 @@ export const Loader = () => {
     </div>
   );
 };
-
-// export default Loader;

@@ -13,7 +13,7 @@ export const HomeWrapper = styled.main`
     z-index: 100;
 
     @media screen and (max-width: 920px) {
-        margin-top: 10rem;
+        margin-top: 12rem;
         grid-template-rows: 1fr 1fr;
     }
 `;
@@ -65,6 +65,8 @@ export const TextContainer = styled.section`
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
+
+
     @media screen and (max-width: 1204px) {
         gap: 2.5rem;
     }
@@ -262,21 +264,6 @@ export const Position = styled(PageHeaderStyled)`
             }
         }
     }
-    @media screen and (max-width: 1204px) {
-        font-size: ${typeScale.title};
-        width: 100%;
-    }
-    @media screen and (max-width: 920px) {
-        font-size: ${typeScale.title};
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .text {
-            left: auto;
-        }
-    }
-
 
     @media screen and (max-width: 720px) {
         font-size: ${typeScale.subtitle};
@@ -284,7 +271,10 @@ export const Position = styled(PageHeaderStyled)`
         display: flex;
         justify-content: center;
         align-items: center;
-            .text.first {
+        .text {
+            font-size: ${typeScale.subtitle};
+        }
+        .text.first {
             left: auto;
         }
         .text.second {
@@ -297,6 +287,23 @@ export const Position = styled(PageHeaderStyled)`
             left: auto;
         }
     }
+    @media screen and (max-width: 920px) {
+        font-size: ${typeScale.helperText};
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text {
+            left: auto;
+        }
+    }
+    @media screen and (max-width: 1204px) {
+        font-size: ${typeScale.title};
+        width: 100%;
+    }
+
+
+
 `;
 
 export const AnimatedSpan = styled.span`

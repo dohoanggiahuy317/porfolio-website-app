@@ -69,6 +69,8 @@ export const AboutItemWrapper = styled.div`
             }
         }
     }
+
+
     @media screen and (max-width: 720px) {
         width: 100px;
         height: 100px;
@@ -85,7 +87,7 @@ export const AboutItemWrapper = styled.div`
         }
 
         &.active {
-            width: 95%;
+            width: 85vw;
             .logo {
                 min-width: 0px;
                 width: 0px;
@@ -125,7 +127,6 @@ export const AboutItemWrapper = styled.div`
         }
 
         &.active {
-        width: 95%;
         .logo {
             min-width: 0px;
             width: 0px;

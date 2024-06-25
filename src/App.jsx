@@ -19,7 +19,7 @@ function App() {
             setIsLoading(false);
             // Allow scrolling after loading
             document.body.style.overflow = 'unset';
-        }, 2000);
+        }, 5000);
 
         return () => {
             clearTimeout(timer);

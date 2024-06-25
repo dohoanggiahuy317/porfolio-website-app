@@ -57,6 +57,9 @@ export const AboutItemWrapper = styled.div`
         overflow-wrap: break-word;
         min-width: unset;
         line-height: 1;
+            h2 {
+                font-size: ${typeScale.subtitle};
+            }
             h3 {
                 font-size: ${typeScale.paragraph};
             }

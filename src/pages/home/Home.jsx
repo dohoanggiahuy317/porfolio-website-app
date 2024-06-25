@@ -54,6 +54,7 @@ export const Home = () => {
                     autoPlay
                     loop
                     muted
+                    playsInline
                     poster="https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/black_hole-5BXdJRacsedEw4kjKx3SxjDQ961UU9.mov"
                 > 
                     <source

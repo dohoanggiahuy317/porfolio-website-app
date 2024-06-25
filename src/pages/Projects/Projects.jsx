@@ -26,6 +26,7 @@ export const Projects = () => {
                     autoPlay
                     loop
                     muted
+                    playsInline
                     poster="https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/encrypt-a0CgQuW0Nj0FTgNjiajs8a9VLkyP0x.mov"
                 >
                     <source

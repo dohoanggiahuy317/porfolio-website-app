@@ -56,6 +56,7 @@ export const About = () => {
                         autoPlay
                         loop
                         muted
+                        playsInline
                         poster=".https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/ball-QzzLRI0pNiHz1OCqsLTlSBGGp1IwXp.mov"
                     >
                         <source

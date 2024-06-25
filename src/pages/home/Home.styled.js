@@ -8,11 +8,12 @@ export const HomeWrapper = styled.main`
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
-    overflow: hidden;
+    // overflow: hidden;
     curser: context-menu;
     z-index: 100;
 
     @media screen and (max-width: 920px) {
+        margin-top: 10rem;
         grid-template-rows: 1fr 1fr;
     }
 `;
@@ -39,36 +40,50 @@ export const VideoContainter = styled.div`
         overflow: hidden;
         cursor: default;
     }
+
+    @media screen and (max-width: 920px) {
+        margin-top: 2rem;
+        grid-template-rows: 1fr 1fr;
+    }
 `
 
 export const DogContainer = styled.aside`
-  grid-column: 8/13;
-  overflow: hidden;
-  @media screen and (max-width: 920px) {
-    grid-column: 1/ 13;
-    align-self: start;
-  }
+    grid-column: 8/13;
+    overflow: hidden;
+
+    @media screen and (max-width: 920px) {
+        grid-column: 1/ 13;
+        align-self: start;
+        height: 100%;
+        width: auto;
+    }
 `;
 
 export const TextContainer = styled.section`
-  grid-column: 2/ 8;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: center;
-  @media screen and (max-width: 1204px) {
-    gap: 2.5rem;
-  }
-  @media screen and (max-width: 920px) {
-    grid-column: 1/ 13;
-    align-self: end;
-    padding-inline: 1rem;
-    justify-self: center;
-    align-self: center;
-  }
-  @media screen and (max-width: 480px) {
-    gap: 1.5rem;
-  }
+    grid-column: 2/ 8;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    @media screen and (max-width: 1204px) {
+        gap: 2.5rem;
+    }
+    @media screen and (max-width: 920px) {
+        grid-column: 1/ 13;
+        align-self: end;
+        padding-inline: 1rem;
+        justify-self: center;
+        align-self: center;
+
+        #download_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        gap: 1.5rem;
+    }
 `;
 
 export const Hello = styled.p`

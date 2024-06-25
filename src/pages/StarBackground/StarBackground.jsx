@@ -38,7 +38,7 @@ export const StarBackground = (props) => {
 };
 
 export const StarsCanvas = () => (
-  <div className="fixed inset-0 -z-10" style={{height: "400vh", width:"100%", position: "absolute", zIndex: -1}}>
+  <div className="fixed inset-0 -z-10" style={{height: "100%", width:"100%", position: "absolute", zIndex: -1}}>
     <Canvas camera={{ position: [0, 0, 1] }}>
       <Suspense fallback={null}>
         <StarBackground />

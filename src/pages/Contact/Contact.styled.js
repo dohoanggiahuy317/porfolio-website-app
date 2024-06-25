@@ -6,6 +6,7 @@ export const ContactWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-gap: 1rem;
+  margin-bottom: 2rem;
   .buttons {
     display: flex;
     grid-row: 2;
@@ -82,4 +83,14 @@ export const DownloadButton = styled(Button)`
   @media screen and (max-width: 720px) {
     height: 45px;
   }
+`;
+
+
+export const DogContainer = styled.aside`
+    grid-column: 7/11;
+    overflow: hidden;
+
+    @media screen and (max-width: 920px) {
+        display: none;
+    }
 `;

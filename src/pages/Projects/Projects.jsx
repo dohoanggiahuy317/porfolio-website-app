@@ -4,6 +4,7 @@ import { projects } from "../../data";
 import { NextButton } from "./carasoulButton";
 import { ProjectItem } from "./ProjectItem";
 import { Carasoul, ProjectContainer, VideoContainter } from "./Projects.styled";
+import { StarsCanvas } from '../StarBackground';
 
 export const Projects = () => {
     const ref = useRef(null);
@@ -18,6 +19,7 @@ export const Projects = () => {
 
     return (
         <Page header="Projects">
+            <StarsCanvas />
             <VideoContainter >
                 <video
                     id="background-video"

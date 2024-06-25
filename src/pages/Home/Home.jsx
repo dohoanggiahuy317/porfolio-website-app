@@ -3,6 +3,7 @@ import React, { useContext, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { NavbarContext } from "../../context";
 import Dog from "./Dog";
+import spaceship from "../../assets/3d/spaceship.glb";
 import {
     AnimatedSpan,
     DogContainer,
@@ -16,6 +17,8 @@ import {
 import { DownloadButton } from "../Contact/Contact.styled";
 import { red } from "../../utils";
 import { AiOutlineDownload } from "react-icons/ai";
+import { StarsCanvas } from '../StarBackground';
+
 
 export const Home = () => {
     const { ref, inView } = useInView({
@@ -44,6 +47,7 @@ export const Home = () => {
     };
     return (
         <HomeWrapper ref={ref} id="home-page">
+            <StarsCanvas />
             <VideoContainter >
                 <video
                     id="background-video"
@@ -80,6 +84,7 @@ export const Home = () => {
                     href="../../../src/assets/images/edu/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    id="download_wrapper"
                 >
                     <DownloadButton bg={red} tooltip="Download">
                         <AiOutlineDownload size={40} />
@@ -89,9 +94,10 @@ export const Home = () => {
             </TextContainer>
             <DogContainer>
                 <Canvas camera={{ position: [0, 2, 5] }}>
-                    <Dog />
+                    <Dog source={spaceship}/>
                 </Canvas>
             </DogContainer>
+            
         </HomeWrapper>
     );
 };

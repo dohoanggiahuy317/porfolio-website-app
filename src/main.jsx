@@ -3,12 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./assets/index.css";
 import { GlobalStyles } from "./utils";
-// import { StarsCanvas } from './pages/StarBackground';
+import { StarsCanvas } from './pages/StarBackground';
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <StarsCanvas /> */}
     <App />
     <GlobalStyles />
   </React.StrictMode>

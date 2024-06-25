@@ -3,17 +3,47 @@ import { PageHeader, PageHeaderStyled } from "../../components/ui";
 import { blue, pink, typeScale } from "../../utils";
 
 export const HomeWrapper = styled.main`
-  display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1rem;
-  @media screen and (max-width: 920px) {
-    grid-template-rows: 1fr 1fr;
-  }
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    overflow: hidden;
+    curser: context-menu;
+    z-index: 100;
+
+    @media screen and (max-width: 920px) {
+        grid-template-rows: 1fr 1fr;
+    }
 `;
+
+export const VideoContainter = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    top: -50%;
+    margin-top: 7.3rem;
+    padding: 0;
+
+    #background-video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        rotate: 180deg;
+        bottom: 0;
+        z-index: -2;
+        overflow: hidden;
+        cursor: default;
+    }
+`
 
 export const DogContainer = styled.aside`
   grid-column: 8/13;
+  overflow: hidden;
   @media screen and (max-width: 920px) {
     grid-column: 1/ 13;
     align-self: start;

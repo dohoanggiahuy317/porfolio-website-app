@@ -24,6 +24,27 @@ export const ProjectContainer = styled.section`
   }
 `;
 
+export const VideoContainter = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    padding: 0;
+
+    #background-video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+        overflow: hidden;
+        cursor: default;
+    }
+`
+
 export const Carasoul = styled.div`
   grid-column: 1/13;
   display: flex;

@@ -5,10 +5,12 @@ import { Contact } from "./pages/Contact";
 import { Experience } from "./pages/Experience";
 import { Home } from "./pages/home";
 import { Projects } from "./pages/Projects";
+import { StarsCanvas } from './pages/StarBackground';
 
 function App() {
   return (
     <div className="App">
+    <StarsCanvas />
       <Navbar>
         <Home />
         <About />
@@ -16,6 +18,7 @@ function App() {
         <Projects />
         <Contact />
       </Navbar>
+      
     </div>
   );
 }

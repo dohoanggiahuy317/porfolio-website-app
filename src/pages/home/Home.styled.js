@@ -70,6 +70,9 @@ export const TextContainer = styled.section`
     }
     @media screen and (max-width: 920px) {
         grid-column: 1/ 13;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         align-self: end;
         padding-inline: 1rem;
         justify-self: center;
@@ -204,82 +207,96 @@ const textRotate4 = keyframes`
 `;
 
 export const Position = styled(PageHeaderStyled)`
-  background: unset;
-  line-height: unset;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  margin-block: 0;
-  margin-inline: 0;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  color: ${blue["50"]};
-  cursor: default;
-  width: auto;
-  .text {
-    span {
-      display: inline-block;
-      will-change: transform;
-      transform-style: preserve-3d;
-      transform-origin: bottom;
-      animation: ${textRotate1} 8s infinite;
+    background: unset;
+    line-height: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    margin-block: 0;
+    margin-inline: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: ${blue["50"]};
+    cursor: default;
+    width: auto;
+    .text {
+        left: 0;
+        span {
+            display: inline-block;
+            will-change: transform;
+            transform-style: preserve-3d;
+            transform-origin: bottom;
+            animation: ${textRotate1} 8s infinite;
+        }
+        &.second {
+            color: ${pink["50"]};
+            position: absolute;
+            top: 2%;
+            // left: 0;
+            span {
+                transform-origin: bottom;
+                transform: translate3d(0, 100%, 0) rotateX(-90deg);
+                animation: ${textRotate2} 8s infinite;
+            }
+        }
+        &.third {
+            color: ${blue["50"]};
+            position: absolute;
+            top: 2%;
+            // left: 0;
+            span {
+                transform-origin: bottom;
+                transform: translate3d(0, 100%, 0) rotateX(-90deg);
+                animation: ${textRotate3} 8s infinite;
+            }
+        }
+        &.forth {
+            color: ${pink["50"]};
+            position: absolute;
+            top: 2%;
+            // left: 0;
+            span {
+                transform-origin: bottom;
+                transform: translate3d(0, 100%, 0) rotateX(-90deg);
+                animation: ${textRotate4} 8s infinite;
+            }
+        }
     }
-    &.second {
-      color: ${pink["50"]};
-      position: absolute;
-      top: 2%;
-      left: 0;
-      span {
-        transform-origin: bottom;
-        transform: translate3d(0, 100%, 0) rotateX(-90deg);
-        animation: ${textRotate2} 8s infinite;
-      }
+    @media screen and (max-width: 1204px) {
+        font-size: ${typeScale.title};
+        width: 100%;
     }
-    &.third {
-      color: ${blue["50"]};
-      position: absolute;
-      top: 2%;
-      left: 0;
-      span {
-        transform-origin: bottom;
-        transform: translate3d(0, 100%, 0) rotateX(-90deg);
-        animation: ${textRotate3} 8s infinite;
-      }
+    @media screen and (max-width: 920px) {
+        font-size: ${typeScale.title};
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text {
+            left: auto;
+        }
     }
-    &.forth {
-      color: ${pink["50"]};
-      position: absolute;
-      top: 2%;
-      left: 0;
-      span {
-        transform-origin: bottom;
-        transform: translate3d(0, 100%, 0) rotateX(-90deg);
-        animation: ${textRotate4} 8s infinite;
-      }
+
+
+    @media screen and (max-width: 720px) {
+        font-size: ${typeScale.subtitle};
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .text.first {
+            left: auto;
+        }
+        .text.second {
+            left: auto;
+        }
+        .text.third {
+            left: auto;
+        }
+        .text.forth {
+            left: auto;
+        }
     }
-  }
-  @media screen and (max-width: 1204px) {
-    font-size: ${typeScale.title};
-  }
-  @media screen and (max-width: 480px) {
-    font-size: ${typeScale.subtitle};
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .text.first {
-      left: auto;
-    }
-    .text.second {
-      left: auto;
-    }
-    .text.third {
-      left: auto;
-    }
-    .text.forth {
-      left: auto;
-    }
-  }
 `;
 
 export const AnimatedSpan = styled.span`

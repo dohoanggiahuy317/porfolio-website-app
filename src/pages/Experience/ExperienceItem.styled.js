@@ -20,9 +20,6 @@ export const StyledExperienceItem = styled.div`
     gap: 1rem;
     padding: 1.25rem;
     cursor: pointer;
-    .date {
-        display: none;
-    }
     .date_al {
         display: none;
     }
@@ -38,8 +35,6 @@ export const StyledExperienceItem = styled.div`
         gap: 1.3rem;
         rotate: 90deg;
         left: 30px;
-        
-        // transform: translateX(40px);
         transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
         .image {
                 display: flex;
@@ -78,8 +73,6 @@ export const StyledExperienceItem = styled.div`
                 display: none;
             }
         }
-
-
     }
     p {
         display: none;
@@ -91,11 +84,6 @@ export const StyledExperienceItem = styled.div`
         justify-content: flex-start;
         align-items: flex-start;
         padding: 2rem;
-        .date {
-            display: block;
-            font-size: ${typeScale.paragraph};
-            font-weight: bold;
-        }
         p {
             display: block;
         }
@@ -114,8 +102,17 @@ export const StyledExperienceItem = styled.div`
             }
 
             .text {
+                h2 {
+                    font-size: 1.5rem;
+                }
                 .position {
                     display: block;
+                    font-size: 1rem;
+                    line-height: 2.4rem;
+                    width: 100%;
+                }
+                p {
+                    font-size: 1rem;
                 }
             }
         }
@@ -126,64 +123,7 @@ export const StyledExperienceItem = styled.div`
 
 
 
-
-    @media screen and (max-width: 1200px) {
-        gap: 0.25rem;
-        .header {
-            gap: 0.75rem;
-            h2 {
-                font-size: ${typeScale.subtitle};
-                line-height: 1.75rem;
-            }
-            .position {
-                font-size: ${typeScale.paragraph};
-                line-height: 1.5rem;
-            }
-            .image {
-                .wrapper {
-                    width: 4.8rem;
-                    height: 4.8rem;
-                    box-shadow: none;
-                }
-            }
-        }
-        .date {
-            display: none;
-        }
-
-
-        p {
-            font-size: ${typeScale.paragraph};
-        }
-
-
-        &.active {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .header {
-                flex-direction: column;
-            }
-            .date {
-                display: none;
-            }
-            .date_al {
-                display: block;
-                text-align: left;
-            }
-            .bio {
-                display: none;
-            }
-    }
-
-
-
-
-
-
-
-
-
+    
 
     @media screen and (max-width: 720px) {
         width: 100%;
@@ -195,6 +135,88 @@ export const StyledExperienceItem = styled.div`
             display: none;
         }
         .date_al {
+            display: none;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        },
+        .header {
+            transform: translateX(0);
+            rotate: 0deg;
+            .image {
+                .wrapper {
+                    width: 50%;
+                    height: 50%;
+                    rotate: 0deg;
+                }
+            }
+        }
+
+        &.active {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            height: auto;
+            grid-column: 1 / 5; // Adjusted to span across 3 columns
+            grid-row: 1; // Adjusted to occupy the first row
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .text {
+                display: block;
+                h2 {
+                    font-size: ${typeScale.title};  
+                }
+            }
+            .header {
+                height: auto;
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .text h2 {
+                    text-align: center;
+                }
+                .text h3 {
+                    text-align: center;
+                }
+                .text p {
+                    text-align: center;
+                }
+                .image {
+                    height: 4rem;
+                }
+                .image .wrapper {
+                    height: 100%;
+                    width: auto;
+                    aspect-ratio: 1 / 1;
+                }
+            },
+            .image {
+                display: none;
+            },
+            .wrapper {
+                width: auto;
+            }
+            .bio {
+                display: none;
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        grid-column: span 1;
+        grid-row: auto;
+        .text {
             display: none;
         }
 
@@ -262,4 +284,7 @@ export const StyledExperienceItem = styled.div`
             }
         }
     }
+
+
+
 `;

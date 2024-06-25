@@ -5,6 +5,7 @@ export const NavbarItem = styled.a`
   font-size: ${typeScale.text};
   font-weight: semibold;
   color: #fff4;
+  text-shadow: 1px 1px 2px black;
   transition: all 0.2 ease-out;
   cursor: pointer;
   display: flex;

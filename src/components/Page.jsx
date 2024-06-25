@@ -26,7 +26,7 @@ const StyledLayout = styled(Grid)`
 
     @media screen and (max-width: 720px) {
         grid-template-columns: repeat(6, 1fr);
-        padding-inline-start: 1.3rem;
+        // padding-inline-start: 1.3rem;
         .bg-text {
         font-size: 5.5rem;
         }

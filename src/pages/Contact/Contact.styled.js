@@ -90,7 +90,7 @@ export const DogContainer = styled.aside`
     grid-column: 7/11;
     overflow: hidden;
 
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 1200px) {
         display: none;
     }
 `;

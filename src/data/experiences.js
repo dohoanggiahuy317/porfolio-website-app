@@ -10,8 +10,8 @@ export const experiences = [
   {
     logo: deloitte,
     name: "Deloitte",
-    joined: "May 2024",
-    end: "August 2024",
+    joined: "05/2024",
+    end: "08/2024",
     location: "Hanoi, Vietnam",
     title: "Software Engineer Intern",
     bio: `Utilized Jmix and Spring Boot to develop features for 
@@ -21,8 +21,8 @@ export const experiences = [
   {
     logo: fpt,
     name: "FPT Software",
-    joined: "July 2023 ",
-    end: "September 2023",
+    joined: "07/2023 ",
+    end: "09/2023",
     location: "Hanoi, Vietnam",
     title: "Software Engineer Intern",
     bio: `Designed a soft deletion feature to facilitate data center procedure 
@@ -33,8 +33,8 @@ export const experiences = [
   {
     logo: microsoft,
     name: "VinBrain x Microsoft Lab",
-    joined: "May 2022",
-    end: "September 2022",
+    joined: "05/2022",
+    end: "09/2022",
     location: "Hanoi, Vietnam",
     title: "Software Engineer Intern",
     bio: `Developed a Spring Boot microservice booking app to support 100+ 
@@ -44,8 +44,8 @@ export const experiences = [
   {
     logo: data,
     name: "Above Data",
-    joined: "January 2024",
-    end: "April 2024",
+    joined: "01/2024",
+    end: "04/2024",
     location: "Granville, OH, USA",
     title: "Data Engineer Intern",
     bio: `Designed a RAG pipeline with LLMs to generate natural responses to customer 
@@ -55,8 +55,8 @@ export const experiences = [
   {
     logo: denison,
     name: "Denison University Research Lab",
-    joined: "May 2023",
-    end: "July 2023",
+    joined: "05/2023",
+    end: "07/2023",
     location: "Hanoi, Vietnam",
     title: "Data Engineer Intern",
     bio: `Proposed a multi-threaded pipeline to generate a high-quality 

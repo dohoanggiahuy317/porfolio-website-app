@@ -88,7 +88,7 @@ export const Home = () => {
                 >
                     <DownloadButton bg={red} tooltip="Download">
                         <AiOutlineDownload size={40} />
-                        <span>My resume</span>
+                        <span>Grab my resume?</span>
                     </DownloadButton>
                 </a>
             </TextContainer>

@@ -61,6 +61,7 @@ export const Educations = styled.section`
 
     @media screen and (max-width: 720px) {
         flex-direction: column;
+        justify-content: space-around;
         height: 400px;
         padding-inline: 1.5rem;
     }
@@ -70,11 +71,15 @@ export const Educations = styled.section`
 `;
 
 export const Text = styled.aside`
-  grid-column: 2/7;
-  width: 100%;
-  @media screen and (max-width: 720px) {
-    grid-column: 1 / 7;
-  }
+    grid-column: 2/7;
+    width: 100%;
+    text-align: justify;
+    @media screen and (max-width: 720px) {
+            grid-column: 1 / 7;
+    }
+    @media screen and (max-width: 720px) {
+            grid-column: 1 / 7;
+    }
 `;
 
 export const SkillsWrapper = styled.aside`

@@ -54,10 +54,10 @@ export const Home = () => {
                     autoPlay
                     loop
                     muted
-                    poster="../../src/assets/images/bg/black_hole.mov"
+                    poster="https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/black_hole-5BXdJRacsedEw4kjKx3SxjDQ961UU9.mov"
                 > 
                     <source
-                        src="../../src/assets/images/bg/black_hole.mov"
+                        src="https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/black_hole-5BXdJRacsedEw4kjKx3SxjDQ961UU9.mov"
                         type="video/mp4"
                     />
                 </video>

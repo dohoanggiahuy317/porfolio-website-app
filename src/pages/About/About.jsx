@@ -56,10 +56,10 @@ export const About = () => {
                         autoPlay
                         loop
                         muted
-                        poster="../../src/assets/images/bg/ball.mov"
+                        poster=".https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/ball-QzzLRI0pNiHz1OCqsLTlSBGGp1IwXp.mov"
                     >
                         <source
-                            src="../../src/assets/images/bg/ball.mov"
+                            src="https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/ball-QzzLRI0pNiHz1OCqsLTlSBGGp1IwXp.mov"
                             type="video/mp4"
                         />
                     </video>

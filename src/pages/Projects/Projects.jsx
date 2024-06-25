@@ -26,10 +26,10 @@ export const Projects = () => {
                     autoPlay
                     loop
                     muted
-                    poster="../../src/assets/images/bg/encrypt.mov"
+                    poster="https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/encrypt-a0CgQuW0Nj0FTgNjiajs8a9VLkyP0x.mov"
                 >
                     <source
-                        src="../../src/assets/images/bg/encrypt.mov"
+                        src="https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/encrypt-a0CgQuW0Nj0FTgNjiajs8a9VLkyP0x.mov"
                         type="video/mp4"
                     />
                 </video>

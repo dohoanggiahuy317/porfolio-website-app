@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { blue, typeScale } from "../../utils";
+import { neonPurple, typeScale } from "../../utils";
 
 const fadeIn = keyframes`
   0%{ 
@@ -48,10 +48,10 @@ export const Face = styled.div`
   border-radius: 0.5rem;
   transition: all 0.2s ease;
   &.face-2 {
-    background-color: ${blue["30"]};
+    background-color: ${neonPurple["20"]};
     transform: rotateY(90deg);
     transform-origin: right;
-    box-shadow: -0.6rem 0.6rem 0 ${blue["00"]};
+    box-shadow: -0.6rem 0.6rem 0 ${neonPurple["00"]};
     .text {
       height: 100%;
       transform: rotateY(180deg);
@@ -62,7 +62,7 @@ export const Face = styled.div`
     }
   }
   &.face-3 {
-    background-color: ${blue["50"]};
+    background-color: ${neonPurple["50"]};
     transform: rotateX(90deg);
     transform-origin: top;
     .text {
@@ -73,7 +73,7 @@ export const Face = styled.div`
     }
   }
   &.face-1 {
-    box-shadow: 0.6rem 0.2rem 0 ${blue["00"]};
+    box-shadow: 0.6rem 0.2rem 0 ${neonPurple["00"]};
 
     .img {
         position: absolute;
@@ -104,7 +104,7 @@ export const Face = styled.div`
       }
     }
     &:hover {
-      box-shadow: 0.6rem 0.6rem 0 ${blue["00"]};
+      box-shadow: 0.6rem 0.6rem 0 ${neonPurple["00"]};
       .content {
         opacity: 1;
         transform: scale(0.8);

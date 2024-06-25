@@ -3,7 +3,7 @@ import { blue, red, typeScale } from "../../utils";
 
 export const AboutItemWrapper = styled.div`
     overflow: hidden;
-    background-color: ${(props) => (props.color ? props.color["90"] : blue["60"])};
+    background-color: ${(props) => (props.color ? props.color["80"] : blue["60"])};
 
     color: ${(props) => (props.color ? props.color["00"] : red["00"])};
     border: 4px solid ${(props) => (props.color ? props.color["00"] : blue["00"])};

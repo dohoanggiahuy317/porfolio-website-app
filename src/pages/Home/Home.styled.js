@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { PageHeader, PageHeaderStyled } from "../../components/ui";
-import { blue, pink, typeScale } from "../../utils";
+import { electricGreen, novaViolet, typeScale } from "../../utils";
 
 export const HomeWrapper = styled.main`
     display: grid;
@@ -216,7 +216,7 @@ export const Position = styled(PageHeaderStyled)`
     margin: 0;
     padding: 0;
     position: relative;
-    color: ${blue["50"]};
+    color: ${electricGreen["40"]};
     cursor: default;
     width: auto;
     .text {
@@ -229,7 +229,7 @@ export const Position = styled(PageHeaderStyled)`
             animation: ${textRotate1} 8s infinite;
         }
         &.second {
-            color: ${pink["50"]};
+            color: ${novaViolet["50"]};
             position: absolute;
             top: 2%;
             // left: 0;
@@ -240,7 +240,7 @@ export const Position = styled(PageHeaderStyled)`
             }
         }
         &.third {
-            color: ${blue["50"]};
+            color: ${electricGreen["40"]};
             position: absolute;
             top: 2%;
             // left: 0;
@@ -251,7 +251,7 @@ export const Position = styled(PageHeaderStyled)`
             }
         }
         &.forth {
-            color: ${pink["50"]};
+            color: ${novaViolet["50"]};
             position: absolute;
             top: 2%;
             // left: 0;

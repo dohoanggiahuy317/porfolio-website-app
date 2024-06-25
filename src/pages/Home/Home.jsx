@@ -15,7 +15,7 @@ import {
     VideoContainter,
 } from "./Home.styled";
 import { DownloadButton } from "../Contact/Contact.styled";
-import { red } from "../../utils";
+import { photonLime } from "../../utils";
 import { AiOutlineDownload } from "react-icons/ai";
 import { StarsCanvas } from '../StarBackground';
 
@@ -86,7 +86,7 @@ export const Home = () => {
                     rel="noopener noreferrer"
                     id="download_wrapper"
                 >
-                    <DownloadButton bg={red} tooltip="Download">
+                    <DownloadButton bg={photonLime} tooltip="Download">
                         <AiOutlineDownload size={40} />
                         <span>Grab my resume?</span>
                     </DownloadButton>

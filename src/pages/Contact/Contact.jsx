@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import { Button, Input, Textarea } from "../../components/form";
 import { Page } from "../../components/Page";
-import { blue, green, pink, red, yellow } from "../../utils";
+import { cyberBlue, electricGreen, neonPurple, stellarCyan } from "../../utils";
 import Dog from "../home/Dog";
 import lego from "../../assets/3d/lego.glb";
 
@@ -68,13 +68,13 @@ export const Contact = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <IconButton bg={blue}>
+                            <IconButton bg={cyberBlue}>
                                 <AiFillLinkedin size={40} />
                             </IconButton>
                         </a>
 
                         <a href="mailto:dohoanggiahuy310703@gmail.com">
-                            <IconButton bg={green}>
+                            <IconButton bg={electricGreen}>
                                 <AiOutlineMail size={40} />
                             </IconButton>
                         </a>
@@ -84,7 +84,7 @@ export const Contact = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <IconButton bg={yellow}>
+                            <IconButton bg={neonPurple}>
                                 <AiFillGithub size={40} />
                             </IconButton>
                         </a>
@@ -94,7 +94,7 @@ export const Contact = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <DownloadButton bg={red} tooltip="Download">
+                            <DownloadButton bg={stellarCyan} tooltip="Download">
                                 <AiOutlineDownload size={40} />
                                 <span>Resume</span>
                             </DownloadButton>

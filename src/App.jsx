@@ -6,19 +6,30 @@ import { Contact } from "./pages/Contact";
 import { Experience } from "./pages/Experience";
 import { Home } from "./pages/home";
 import { Projects } from "./pages/Projects";
-import Loader from "./pages/loader/Loader";
+import { Loader } from "./pages/Loader";
 
 function App() {
-    // const [isLoading, setIsLoading] = React.useState(true);
+    const [isLoading, setIsLoading] = useState(true);
 
-    // // Simulate loading
-    // React.useEffect(() => {
-    //   setTimeout(() => setIsLoading(false), 30);
-    // }, []);
+    useEffect(() => {
+        // Prevent scrolling when loading
+        document.body.style.overflow = 'hidden';
+
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+            // Allow scrolling after loading
+            document.body.style.overflow = 'unset';
+        }, 1000);
+
+        return () => {
+            clearTimeout(timer);
+            document.body.style.overflow = 'unset';
+        };
+    }, []);
 
     return (
         <div className="App">
-            {/* {isLoading ? <Loader /> : null } */}
+            {isLoading ? <Loader /> : null }
             <Navbar>
                 <Home />
                 <About />

@@ -10,4 +10,4 @@ export const typeScale = {
   copyrightText: "0.563rem",
 };
 
-export const primaryFont = "'Roboto Mono', monospace;";
+export const primaryFont = "'Anta', monospace;";

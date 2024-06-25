@@ -90,7 +90,7 @@ export const StyledExperienceItem = styled.div`
 
         .header {
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             rotate: 0deg;
             width: 100%;

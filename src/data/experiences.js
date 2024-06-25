@@ -4,7 +4,7 @@ import microsoft from "../assets/images/exp/microsoft.png";
 import data from "../assets/images/exp/data.png";
 import denison from "../assets/images/edu/denison.png";
 
-import { yellow, green, blue, pink, red} from "../utils";
+import { plasmaOrange, green, cyberBlue, stellarCyan, cosmicCoral} from "../utils";
 
 export const experiences = [
   {
@@ -28,7 +28,7 @@ export const experiences = [
     bio: `Designed a soft deletion feature to facilitate data center procedure 
     correction using C#, Amazon RDS, and DynamoDB, reducing computing costs by 65% for 
     85 cloud-based virtual machines.`,
-    color: yellow,
+    color: plasmaOrange,
   },
   {
     logo: microsoft,
@@ -39,7 +39,7 @@ export const experiences = [
     title: "Software Engineer Intern",
     bio: `Developed a Spring Boot microservice booking app to support 100+ 
     patients and doctors during the COVID-19 pandemic.`,
-    color: blue,
+    color: cyberBlue,
   },
   {
     logo: data,
@@ -50,7 +50,7 @@ export const experiences = [
     title: "Data Engineer Intern",
     bio: `Designed a RAG pipeline with LLMs to generate natural responses to customer 
     queries about information on 500+ retail brands.`,
-    color: pink,
+    color: stellarCyan,
   },
   {
     logo: denison,
@@ -61,7 +61,7 @@ export const experiences = [
     title: "Data Engineer Intern",
     bio: `Proposed a multi-threaded pipeline to generate a high-quality 
     dataset of 77,000 data entries for LLMs model training.
-    Link to paper <a href="https://arxiv.org/abs/2309.05103v1">here<a>`,
-    color: red,
+    Link to paper <a href="https://arxiv.org/abs/2309.05103v1" style="color: white;">here.<a>`,
+    color: cosmicCoral,
   },
 ];

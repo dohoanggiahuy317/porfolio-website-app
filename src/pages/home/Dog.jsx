@@ -3,7 +3,6 @@ import { useFrame, useLoader, useThree } from "@react-three/fiber";
 import { useRef, useEffect, useState } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import * as THREE from 'three';
-import dog from "../../assets/3d/spaceship.glb";
 import { useIsMobile } from "../../hooks";
 
 const Dog = (props) => {

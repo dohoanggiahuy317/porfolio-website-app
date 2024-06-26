@@ -90,7 +90,7 @@ export const Contact = () => {
                         </a>
 
                         <a
-                            href="../../../src/assets/images/edu/resume.pdf"
+                            href="https://1d9acuwmhputhvdf.public.blob.vercel-storage.com/resume-IHcCrQxB2SfDzZ33joVMC2uvNgh9F2.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

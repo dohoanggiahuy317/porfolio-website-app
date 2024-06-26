@@ -63,7 +63,7 @@ export const projects = [
   },
   {
     title: "Hanoi Digital Art Gallery",
-    description: "Built using ReactJS, ThreeJS, CSS3 and lots of ❤️ love.",
+    description: "Built a website to store all Hanoi images using HTML5/CSS and Javascript",
     image: art,
     github: "https://github.com/dohoanggiahuy317/JaWeee-Art-portfolio-Web",
     link: "https://jaweee-art-gallery.netlify.app/",

@@ -5,7 +5,7 @@ export const ProjectContainer = styled.section`
   width: 100%;
   transition: transform 1s cubic-bezier(0.46, 0.35, 0, 1.27);
   align-self: center;
-  .wrapper {
+  .wrapper_project {
     scroll-behavior: smooth;
     flex-shrink: 0;
     display: flex;

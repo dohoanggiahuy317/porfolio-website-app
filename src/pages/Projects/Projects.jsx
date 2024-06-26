@@ -11,10 +11,10 @@ export const Projects = () => {
 
     const moveLeft = (e) => {
         console.log(ref.current.scrollLeft);
-        document.querySelector(".wrapper").scrollLeft += 600;
+        document.querySelector(".wrapper_project").scrollLeft += 600;
     };
     const moveRight = (e) => {
-        document.querySelector(".wrapper").scrollLeft -= 650;
+        document.querySelector(".wrapper_project").scrollLeft -= 650;
     };
 
     return (
@@ -36,7 +36,7 @@ export const Projects = () => {
                 </video>
             </VideoContainter>
             <ProjectContainer ref={ref}>
-                <div className="wrapper">
+                <div className="wrapper_project">
                     {projects.map((data, index) => (
                         <ProjectItem data={data} key={index} index={index} />
                     ))}

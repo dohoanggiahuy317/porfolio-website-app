@@ -90,7 +90,7 @@ export const Contact = () => {
                         </a>
 
                         <a
-                            href="src/assets/images/edu/resume.pdf"
+                            href="../../assets/images/edu/resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

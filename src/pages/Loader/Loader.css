@@ -1,0 +1,62 @@
+.aesthetic-loader {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 999999;
+    background-color: black;
+}
+
+.textl {
+    font-size: xx-large;
+    margin: 3rem;
+}
+
+.dot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dotl {
+    width: 3rem;
+    height: 3rem;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dotl:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.dotl:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.dotl:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.dotl:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(0.4);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

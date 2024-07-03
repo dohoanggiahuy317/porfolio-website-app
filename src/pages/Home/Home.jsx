@@ -82,7 +82,7 @@ export const Home = () => {
                 </Position>
 
                 <a
-                    href="src/assets/images/edu/resume.pdf"
+                    href="public/resume/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     id="download_wrapper"

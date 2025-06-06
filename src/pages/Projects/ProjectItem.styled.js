@@ -111,7 +111,7 @@ export const Face = styled.div`
         height: 100%;
       }
       .img {
-        filter: brightness(20%) grayscale(100%);
+        filter: brightness(15%) grayscale(100%) blur(5px);
       }
     }
   }

@@ -1,12 +1,23 @@
+import capitalone from "../assets/images/exp/capitalone.png";
 import deloitte from "../assets/images/exp/deloitte.jpg";
 import fpt from "../assets/images/exp/fpt.png";
 import microsoft from "../assets/images/exp/microsoft.png";
 import data from "../assets/images/exp/data.png";
 import denison from "../assets/images/edu/denison.png";
 
-import { plasmaOrange, green, cyberBlue, stellarCyan, cosmicCoral} from "../utils";
+import {greenLeaf, plasmaOrange, green, cyberBlue, stellarCyan, cosmicCoral, vanila} from "../utils";
 
 export const experiences = [
+  {
+    logo: capitalone,
+    name: "Capital One",
+    joined: "05/2025",
+    end: "08/2025",
+    location: "Richmond, VA, USA",
+    title: "Software Engineer Intern",
+    bio: `Bank Tech team`,
+    color: vanila,
+  },
   {
     logo: deloitte,
     name: "Deloitte",
@@ -50,7 +61,7 @@ export const experiences = [
     title: "Data Engineer Intern",
     bio: `Designed a RAG pipeline with LLMs to generate natural responses to customer 
     queries about information on 500+ retail brands.`,
-    color: stellarCyan,
+    color: greenLeaf,
   },
   {
     logo: denison,

@@ -1,6 +1,8 @@
-import latex from "../assets/images/project/latex.webp";
-import sql from "../assets/images/project/sql.jpeg";
-import cornell from "../assets/images/project/cornell.jpeg";
+import rag_research from "../assets/images/project/rag_research.png";
+import turtle from "../assets/images/project/turtle.png";
+import latex from "../assets/images/project/latex.png";
+import sql from "../assets/images/project/sql.png";
+import cornell from "../assets/images/project/cornell.png";
 import sentiment from "../assets/images/project/sentiment.jpeg";
 import hand from "../assets/images/project/hand.jpeg";
 import key from "../assets/images/project/key.jpeg";
@@ -11,6 +13,20 @@ import art from "../assets/images/project/art.jpeg";
 
 
 export const projects = [
+  {
+    title: "Snowflake RAG ‘n’ ROLL 2025 – RAG-ArXiv LLM Research Assistant",
+    image: rag_research,
+    github: "https://github.com/dohoanggiahuy317/image2latex-App",
+    description:
+      "A microservice-based RAG app that delivers the most relevant research papers in response to AI engineers’ queries, enabling 2,000+ engineers to stay informed on the latest NLP advancements.",
+  },
+  {
+    title: "Tidy Turtles Unity Game",
+    image: turtle,
+    github: "https://personal.denison.edu/~currinf/scooby/",
+    description:
+      "A cooperative puzzle game in Unity to help younger players learn about ocean conservation while having fun :)"
+  },
   {
     title: "TikTok TechJam Hackathon 2024 - Image 2 LaTex converter",
     image: latex,
